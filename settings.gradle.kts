@@ -1,0 +1,1 @@
+rootProject.name = "io.vonteegoway.coach-assist-api-v0.1"
