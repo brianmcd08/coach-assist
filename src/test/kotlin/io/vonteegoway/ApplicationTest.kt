@@ -40,4 +40,12 @@ class PrimaryRoutingTests {
             assertEquals(HttpStatusCode.OK, status)
         }
     }
+
+    @Test
+    fun testPlayerPreferences() = testApplication {
+        application { configureRouting() }
+        client.get("/api/v1/playerPreferences").apply {
+            assertEquals(HttpStatusCode.OK, status)
+        }
+    }
 }

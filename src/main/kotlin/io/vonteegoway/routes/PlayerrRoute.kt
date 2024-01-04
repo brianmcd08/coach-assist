@@ -30,9 +30,7 @@ fun Route.players() {
     }
 
     post("player") {
-        //val player = call.receive<Player>()
         val player = call.receive<Player>()
-
         playerDao.addNewPlayer(player.firstName, player.lastName, player.playerNum)
         call.respond(HttpStatusCode.Accepted)
     }

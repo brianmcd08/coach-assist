@@ -11,6 +11,7 @@ fun Application.configureRouting() {
             players()
             teamAssignments()
             positions()
+            playerPreferences()
         }
     }
 }
