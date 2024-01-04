@@ -1,7 +1,6 @@
 package io.vonteegoway.dao.position
 
-import io.vonteegoway.models.Position
-import io.vonteegoway.models.Positions
+import io.vonteegoway.models.*
 import kotlinx.coroutines.runBlocking
 
 class PositionDAOFacadeImpl : PositionDAOFacade {

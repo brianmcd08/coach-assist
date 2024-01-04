@@ -8,14 +8,15 @@ import org.jetbrains.exposed.sql.transactions.experimental.*
 
 object DatabaseFactory {
     fun init() {
-        val driverClassName = ""
+//        val driverClassName = ""
         val jdbcURl = "jdbc:sqlite:C:\\Users\\brian\\programming\\databases\\LineupMaker.db"
         val database = Database.connect(jdbcURl)
         transaction(database) {
             SchemaUtils.create(Teams)
             SchemaUtils.create(Players)
             SchemaUtils.create(TeamAssignments)
-//            SchemaUtils.create(PreferredPositions)
+//            SchemaUtils.create(Positions)
+            SchemaUtils.create(PlayerPreferences)
 //            SchemaUtils.create(DisfavoredPositions)
         }
     }
